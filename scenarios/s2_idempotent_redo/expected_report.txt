@@ -1,0 +1,18 @@
+== Analysis ==
+winners: ['T1']
+losers: []
+TT:
+  T1: status=COMMITTING lastLSN=30
+DPT:
+  P1: recLSN=10
+  P2: recLSN=25
+
+== Redo ==
+redoneLSNs: [25]
+
+== Undo ==
+undoneLSNs: []
+
+== Final Pages ==
+P1: value=2 pageLSN=15
+P2: value=11 pageLSN=25

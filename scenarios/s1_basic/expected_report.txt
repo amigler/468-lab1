@@ -1,0 +1,18 @@
+== Analysis ==
+winners: []
+losers: ['T2']
+TT:
+  T2: status=RUNNING lastLSN=80
+DPT:
+  P1: recLSN=30
+  P2: recLSN=40
+
+== Redo ==
+redoneLSNs: []
+
+== Undo ==
+undoneLSNs: [80, 40]
+
+== Final Pages ==
+P1: value=110 pageLSN=80
+P2: value=200 pageLSN=40

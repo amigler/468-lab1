@@ -1,0 +1,11 @@
+{"LSN": 10, "type": "BEGIN", "tx": "T1"}
+{"LSN": 20, "type": "BEGIN", "tx": "T2"}
+{"LSN": 30, "type": "BEGIN", "tx": "T3"}
+{"LSN": 40, "type": "UPDATE", "tx": "T1", "page": "P1", "before": 5, "after": 6}
+{"LSN": 50, "type": "UPDATE", "tx": "T2", "page": "P1", "before": 6, "after": 60}
+{"LSN": 60, "type": "UPDATE", "tx": "T3", "page": "P2", "before": 7, "after": 8}
+{"LSN": 70, "type": "COMMIT", "tx": "T1"}
+{"LSN": 80, "type": "ABORT", "tx": "T2"}
+{"LSN": 90, "type": "CHECKPOINT", "DPT": {"P1": 40, "P2": 60}, "TT": {"T2": {"status": "ABORTING", "lastLSN": 50}, "T3": {"status": "RUNNING", "lastLSN": 60}}}
+{"LSN": 100, "type": "END", "tx": "T1"}
+{"LSN": 110, "type": "UPDATE", "tx": "T3", "page": "P1", "before": 60, "after": 61}

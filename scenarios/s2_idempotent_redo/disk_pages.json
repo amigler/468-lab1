@@ -1,0 +1,10 @@
+{
+  "P1": {
+    "pageLSN": 15,
+    "value": 2
+  },
+  "P2": {
+    "pageLSN": 0,
+    "value": 10
+  }
+}
